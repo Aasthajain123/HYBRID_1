@@ -1,6 +1,6 @@
 <body bgcolor="aqua">
 <center>
 <h1>this is my first task of cloud</>
-<img src="http://my-tf-test-bucket-aastha.s3.ap-south-1.amazonaws.com/heart.jpg" height=500/>
+<img src="http://${aws_cloudfront_distribution.tera.domain_name}/${aws_s3_bucket_object.image-upload.key}" height=500/>
 </center>
 </body>
